@@ -1,0 +1,177 @@
+.Topdiv{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.firstdiv{
+    width: 70%;
+}
+.Maindiv{
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    border:2px solid black;
+    border-radius: 10px; 
+    background-color: white;
+    justify-content: end;
+}
+.ProfileTopdiv{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+.profilediv{
+    padding: 10px;
+    margin: 20px;
+    border:2px solid black;
+    border-radius: 10px; 
+    background-color: white;
+}
+
+.Maindiv:hover {
+    box-shadow: 2px 2px 2px green;
+    transition: 0.1ms;
+}
+
+.imageDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform .2s;
+}
+.imageDiv:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.text {
+    text-align: center;
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+.form-div{
+    display: flex;
+    justify-content: center;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.button{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+input[type='file']{
+    display: none;
+    
+}
+.input-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 10px 10px 10px;
+}
+
+@media screen and (max-width:1040px)  {
+    .Topdiv{
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .firstdiv{
+        width: 70%;
+    }
+    .Maindiv{
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+        border:2px solid black;
+        border-radius: 10px; 
+        background-color: white;
+        justify-content: end;
+    }
+    .ProfileTopdiv{
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+    }
+    .profilediv{
+        padding: 10px;
+        margin: 20px;
+        border:2px solid black;
+        border-radius: 10px; 
+        background-color: white;
+    }
+    
+    .Maindiv:hover {
+        box-shadow: 2px 2px 2px green;
+        transition: 0.1ms;
+    }
+    
+    .imageDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        transition: transform .2s;
+    }
+    .imageDiv:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5); 
+    }
+    
+    .text {
+        text-align: center;
+        color: black;
+    }
+    
+    img {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        cursor: pointer;
+    }
+    .form-div{
+        display: flex;
+        justify-content: center;
+    }
+    .button-div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .button{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    input[type='file']{
+        display: none;
+        
+    }
+    .input-div{
+        display: flex;
+        justify-content: space-between;
+        margin: 2px 10px 10px 10px;
+    }
+}

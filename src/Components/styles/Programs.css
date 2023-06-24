@@ -1,0 +1,146 @@
+.programs{
+    display: flex ;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.programs-header{
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+.program-category{
+    display: flex;
+    gap: 1rem;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+.category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;fill: white;
+}
+.category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.category>:nth-child(3){
+   font-size: 0.9rem;
+   line-height: 25px;
+}
+.join-Now{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.join-Now>img{
+    width: 10px;
+    height: 10px;
+}
+.category:hover{
+    background-color: rgba(67, 194, 51, 0.836);
+    cursor: pointer;
+}
+.programsData{
+    display: grid ;
+     grid-template-columns: 1;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin: 10px;
+}
+.programsData>.card{
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1040px){
+    .programs{
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    .programs-header{
+        display: flex;
+        gap: 2rem;
+        font-weight: bold;
+        font-size: 1rem;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-top: 10px;
+    }
+    .program-category{
+        gap: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 75px;
+    }
+    .category{
+        width: 300px;
+        background-color: black;
+        padding: 2rem;
+        gap: 1rem;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .category>:nth-child(1){
+        width: 2rem;
+        height: 2rem;fill: white;
+    }
+    .category>:nth-child(2){
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .category>:nth-child(3){
+       font-size: 0.9rem;
+       line-height: 25px;
+    }
+    .join-Now{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .join-Now>img{
+        width: 10px;
+        height: 10px;
+    }
+    .category:hover{
+        background-color: rgba(67, 194, 51, 0.836);
+        cursor: pointer;
+    }
+    .programsData{
+        display: grid ;
+        grid-template-columns: 1;
+        gap: 2rem;
+        padding: 0 2rem;
+        margin: 10px;
+    }
+    .programsData>.card{
+        width: 300px;
+        height: 100px;
+        margin: auto;
+        padding: 10px;
+        color: black;
+        cursor: pointer;
+    }
+}

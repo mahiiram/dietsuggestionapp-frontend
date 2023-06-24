@@ -1,0 +1,169 @@
+.weightloss {
+    height: 100%;
+    width: 100vw;
+    background-color: lightgrey;
+}
+
+.Main-content {
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 60%;
+    height: 100%;
+    background-color: lightgrey;
+    color: black;
+    padding: 10px;
+}
+.endbar{
+    width: 20%;
+    height: 100%;
+}
+
+.sidebar h1 {
+    color: black;
+    font-size: 30px;
+}
+
+.sidebar p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content h1 {
+    color: black;
+    font-size: 30px;
+}
+
+.content p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ImageDiv {
+    display: flex;
+    justify-content: space-between;
+}
+.ImageDiv img{
+     height: 60px;
+     width: 60px;
+     cursor: none;
+}
+.maincontent img{
+    height: 400px;
+    width: 600px;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.card h1{
+    text-align: center;
+}
+
+
+@media screen and (max-width:1040px) {
+    .weightloss {
+        height: 100%;
+        width: 100vw;
+        background-color: lightgrey;
+    }
+    
+    .Main-content {
+        width: 100%;
+        height: calc(100% - 90px);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sidebar {
+        width: 20%;
+        height: 100%;
+        background-color: lightgrey;
+        padding: 10px;
+        display: none;
+    }
+    
+    .content {
+        width: 100%;
+        height: 100%;
+        background-color: lightgrey;
+        color: black;
+        padding: 10px 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .endbar{
+        width: 20%;
+        height: 100%;
+    }
+    
+    .sidebar h1 {
+        color: black;
+        font-size: 15px;
+    }
+    
+    .sidebar p {
+        color: black;
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .content h1 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    .content p {
+        color: black;
+        font-size: 17px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .ImageDiv {
+        display: flex;
+    }
+    .ImageDiv img{
+         height: 60px;
+         width: 60px;
+         cursor: none;
+         justify-content: flex-end;
+    }
+    .maincontent img{
+        height: 250px;
+        width: 450px;
+        border-radius: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        width: 450px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .card h1{
+        text-align: center;
+    }
+    
+}
