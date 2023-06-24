@@ -64,7 +64,7 @@ export async function verifyPassword({ username, password }){
 export async function updateUser(response){
     try {
         
-        const token = await localStorage.getItem('token');
+        const token = localStorage.getItem('token');
         const data = await axios.put('https://dietapp.onrender.com/api/updateuser', response, { headers : { "Authorization" : `Bearer ${token}`}});
 
         return Promise.resolve({ data })

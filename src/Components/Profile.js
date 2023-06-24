@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
+import '../Components/styles/Username.css'
 import { Link,useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { Toaster, toast } from 'react-hot-toast';
-import { profileValidation} from '../helper/Validate';
-import convertTobase64 from '../helper/Converter';
+import { profileValidation} from '../helper/Validate.js';
+import convertTobase64 from '../helper/Converter.js';
 import useFetch from '../hooks/fetch.hooks.js';
+import { useAuthStore } from '../store/store';
 import { updateUser } from '../helper/helper';
-import '../Components/styles/Username.css';
-import Navbar from './Navbar.js';
-
-
-
 function Profile() {
    const navigate =  useNavigate()
   const [file, setFile] = useState()
-  const username = localStorage.getItem('username')
+ const username = localStorage.getItem('username')
   const [{ isLoading, apiData, serverError }] = useFetch(`user/${username}`);
 
   const formik = useFormik({
@@ -31,6 +28,7 @@ function Profile() {
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: async values => {
+      // values = await Object.assign(values, { profile: file || apiData?.profile || ''})
       let updatePromise = updateUser(values);
 
       toast.promise(updatePromise,{
@@ -38,6 +36,9 @@ function Profile() {
         success:<b>updated successfully</b>,
         error:<b>Couldnt updated</b>
       })
+      updatePromise.then(res=>{
+        navigate('/programs');
+       })
     }
   })
   //formik doesnt support file upload so we need to create this handler
@@ -46,19 +47,14 @@ function Profile() {
     setFile(base64)
   }
 
-  function userLogout(){
-    localStorage.removeItem('token');
-    localStorage.removeItem('username');
-    navigate('/')
-  }
+  
   if (isLoading) return <h1>isLoading</h1>;
   if (serverError) return <h1>{serverError.message}</h1>
   return (
 
-    <div className='ProfileTopdiv'>
-      <Navbar />
+    <div className='Topdiv'>
       <Toaster position='top-center' reverseOrder={false} />
-      <div className='profilediv'>
+      <div className='Maindiv'>
         <div className='text'>
           <h1 className='text'>Profile</h1>
           <p className='text'>You can update the details</p>
@@ -86,11 +82,7 @@ function Profile() {
               </div>
             </div>
             <div className='button-div'>
-              <Link>
               <button type="submit" className="btn btn-primary" >update</button>
-              </Link>
-            </div>
-            <div className='button-div' onClick={userLogout}><p className='text'>Comeback later? <span><Link to='/' style={{color:'blue'}}>Logout</Link></span></p>
             </div>
           </form>
         </div>
