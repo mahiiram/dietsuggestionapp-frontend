@@ -75,7 +75,7 @@ function ProgramMenu() {
                 <div className='Card-div'></div>
             </div>
             <div className='hero-right'>
-            <div style={{display:'flex',justifyContent:'end'}}>
+            <div className='buttondiv'>
             <button onClick={userprofile} className='btn-orange'>Profile</button>
             <button onClick={userLogout} className='btn-orange'>Logout</button>
             </div>

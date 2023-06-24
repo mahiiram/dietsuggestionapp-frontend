@@ -6,6 +6,10 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+.Home{
+  background-color: gray;
+  color: black;
+}
 
 h1, h4, p, a{
   text-decoration: none;
@@ -36,8 +40,4 @@ ul{
   background-color: rgba(255, 166, 0, 0.39);
   color: yellow;
   
-}
-.Home{
-  background-color: gray;
-  color: black;
 }

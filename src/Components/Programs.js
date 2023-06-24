@@ -2,7 +2,7 @@ import React from 'react';
 import '../Components/styles/Programs.css';
 import { programsData } from '../programsData.js';
 import RightArrow from '../Components/assets/rightArrow.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Programs() {
      const navigate = useNavigate();

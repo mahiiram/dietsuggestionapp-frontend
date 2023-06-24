@@ -56,7 +56,7 @@
 }
 .programsData{
     display: grid ;
-     grid-template-columns: 1;
+    grid-template-columns: 1;
     justify-content: center;
     gap: 2rem;
     padding: 0 2rem;
@@ -81,7 +81,7 @@
     }
     .programs-header{
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         font-weight: bold;
         font-size: 1rem;
         justify-content: center;
@@ -128,6 +128,7 @@
         cursor: pointer;
     }
     .programsData{
+        background-color: gray;
         display: grid ;
         grid-template-columns: 1;
         gap: 2rem;
