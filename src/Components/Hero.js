@@ -47,9 +47,6 @@ function Hero() {
                     <span>Diet and fitness programs</span>
                 </div>
             </div>
-            <div className='hero-button'>
-               <button className='btn-orange'>Learn More</button>
-            </div>
        </div>
        <div className='hero-right'>
         <div style={{display:'flex',justifyContent:'center'}}>
