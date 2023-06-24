@@ -73,7 +73,7 @@ function Register() {
           <div className='button-div'>
           <button type="submit" className="btn btn-primary" >SignUp</button>
           </div>
-          <div className='button-div'><p>Already registered? <span><Link to='/login' >Login</Link></span></p>
+          <div className='button-div'><p className='text'>Already registered? <span><Link to='/login' style={{color:'blue'}} >Login</Link></span></p>
           </div>
           
           
