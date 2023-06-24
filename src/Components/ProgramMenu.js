@@ -85,7 +85,9 @@ function ProgramMenu() {
                     <img src={Heart} alt='heartpng' />
                     <span>Heart Rate</span><span>BBM</span>
                 </div>
+                <div className='girlimage'>
                 <img src={fitness} className='hero_img' alt='hero' />
+                </div>
             </div>
         </div>
     )

@@ -44,10 +44,6 @@ function Hero() {
         <div className='figures'>
                 <div>
                     <span>50+</span>
-                    <span>expert Coaches</span>
-                </div>
-                <div>
-                    <span>50+</span>
                     <span>Diet and fitness programs</span>
                 </div>
             </div>
@@ -56,7 +52,7 @@ function Hero() {
             </div>
        </div>
        <div className='hero-right'>
-        <div style={{display:'flex',justifyContent:'end'}}>
+        <div style={{display:'flex',justifyContent:'center'}}>
         <button onClick={handlePrograms} className='btn-orange'>JoinNow</button>
         </div>
 

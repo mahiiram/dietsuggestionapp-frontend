@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     height: 100%;
-    
+    padding: 10px;
 }
 
 h1, h4, p, a{
@@ -133,6 +133,14 @@ h1, h4, p, a{
     height: 30rem;
     border-radius: none;
 }
+.girlimage img{
+    position: absolute;
+    top: 16rem;
+    width: 20rem;
+    height: 20rem;
+    right: 2rem;
+    
+}
 .hero_img_back{
     position: absolute;
     top: 4rem;
@@ -162,7 +170,7 @@ h1, h4, p, a{
 
 .buttondiv{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 @media screen and (max-width:1040px) {
@@ -325,5 +333,8 @@ h1, h4, p, a{
         height: 50px;
         font-size: smaller;
         padding: 0;
+    }
+    .girlimage img{
+        display: none;
     }
 }
