@@ -2,9 +2,17 @@ import React from 'react';
 import '../Components/styles/Programs.css';
 import { programsData } from '../programsData.js';
 import RightArrow from '../Components/assets/rightArrow.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Programs() {
+     const navigate = useNavigate();
+  const handleProgram  = ()=>{
+    if(localStorage.getItem('token')){
+         navigate('/programs')
+    }else{
+      navigate('/login')
+    }
+  }
   return (
     <div className='programs' id='programs'>
         <div className='programs-header'>
@@ -20,15 +28,15 @@ function Programs() {
         </div>
         <div className='program-category'>
         {programsData.map((programs)=>{
-            return <Link to='/programs'>
-                <div className='category'>
+            return <>
+                <div onClick={handleProgram} className='category'>
                  {programs.image}
                  <span>{programs.heading}</span>
                  <span>{programs.details}</span>
                  <div className='join-Now'><span>join Now</span><img src={RightArrow}  alt=''/></div>
             </div>
-
-            </Link>
+              </>
+        
             
         })}
         </div>
