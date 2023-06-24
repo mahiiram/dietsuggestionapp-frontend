@@ -110,7 +110,7 @@ h1, h4, p, a{
     align-items: flex-start;
     border-radius: 5px;
     position: absolute;
-    right: 4rem;
+    right: 5rem;
     top: 7rem;
 }
 .heart>img{
@@ -125,30 +125,8 @@ h1, h4, p, a{
     font-size: 1.5rem;
 }
 
-.hero-right>.hero_img{
-    position: absolute;
-    top: 12rem;
-    right: 8rem;
-    width: 20rem;
-    height: 30rem;
-    border-radius: none;
-}
-.girlimage img{
-    position: absolute;
-    top: 16rem;
-    width: 20rem;
-    height: 20rem;
-    right: 2rem;
-    
-}
-.hero_img_back{
-    position: absolute;
-    top: 4rem;
-    right: 23rem;
-    z-index: 1;
-    width: 15rem;
-    height: 20rem;
-}
+
+
 .BMI-calculator{
     display: flex;
     justify-content: center;
@@ -300,12 +278,7 @@ h1, h4, p, a{
         font-size: 1rem;
     }
     
-    .hero-right>.hero_img{
-        display: none;
-    }
-    .hero_img_back{
-        display: none;
-    }
+    
     .BMI-calculator{
         display: flex;
         justify-content: center;
@@ -333,8 +306,5 @@ h1, h4, p, a{
         height: 50px;
         font-size: smaller;
         padding: 0;
-    }
-    .girlimage img{
-        display: none;
     }
 }

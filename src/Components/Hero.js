@@ -57,8 +57,6 @@ function Hero() {
             <img src={Heart}  alt='heartpng'/>
             <span>Heart Rate</span><span>BBM</span>
         </div>
-        <img src={hero_img} className='hero_img' alt='hero'/>
-        <img src={hero_img_back} className='hero_img_back' alt='heroback'/>
        </div>
     </div>
   )
