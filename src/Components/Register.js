@@ -56,7 +56,6 @@ function Register() {
         <img  src={file || "https://png.pngtree.com/png-vector/20201203/ourmid/pngtree-businessman-icon-vector-and-glyph-png-image_2499766.jpg"} alt='' />
         </label>
         <input onChange={onUpload} type='file' id='profile' name='profile'/>
-         <h6>upload a profile</h6>
       </div>
       
       <div className='form-div'>
