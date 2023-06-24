@@ -53,11 +53,11 @@ function ProgramMenu() {
                         <form onSubmit={calculatebmi}>
                             <div className="form-floating mb-3">
                                 <input value={weight} onChange={(e) => setWeight(e.target.value)} type="Number" className="form-control" id="floatingInput" placeholder="Enter your weight" />
-                                <label for="floatingInput">Weight</label>
+                                <label for="floatingInput">Weight*kg</label>
                             </div>
                             <div className="form-floating mb-3">
                                 <input value={height} onChange={(e) => setHeight(e.target.value)} type="Number" className="form-control" id="floatingInput" placeholder="Enter your Height" />
-                                <label for="floatingInput">Height</label>
+                                <label for="floatingInput">Height*cm</label>
                             </div>
                             <div className='button-div'>
                                 <button type="submit" className="btn btn-success">Submit</button>
