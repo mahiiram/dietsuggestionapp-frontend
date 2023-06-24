@@ -16,7 +16,8 @@ function Register() {
     initialValues:{
       email:'',
       username:'',
-      password:''
+      password:'',
+      profile:file || ''
     },
     validate: registerValidation,
     validateOnBlur:false,
