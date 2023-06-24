@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import '../Components/styles/Hero.css';
 import {  useNavigate } from 'react-router-dom';
 import Heart from '../Components/assets/heart.png';
-import fitness from '../Components/assets/Fitness-PNG-Image-HD.png'
 import Navbar from './Navbar';
 
 function ProgramMenu() {

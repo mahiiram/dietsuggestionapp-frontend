@@ -2,8 +2,6 @@ import React from 'react'
 import '../Components/styles/Hero.css';
 import { useNavigate } from 'react-router-dom';
 import Heart from '../Components/assets/heart.png';
-import hero_img from '../Components/assets/hero_image.png';
-import hero_img_back from '../Components/assets/hero_image_back.png';
 import Navbar from '../Components/Navbar.js'
  
 function Hero() {
@@ -37,7 +35,7 @@ function Hero() {
             </div>
             <div>
                 <span>
-                IN HERE WE WILL HELP YOU TO SHAPE YOUR BODY AND LIVE UP YOUR LIFE TO FULLEST 
+                WE WILL HELP YOU TO SHAPE YOUR BODY AND LIVE UP YOUR LIFE TO FULLEST 
                 </span>
             </div>   
         </div>
