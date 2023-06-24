@@ -13,6 +13,7 @@ import Reset from '../src/Components/Reset.js';
 import { AuthorizeUser,ProtectRoute } from "./middleware/auth";
 import HomePrograms from "./Components/HomePrograms.js";
 import WeightLoss from "./Components/WeightLoss.js";
+import WeightGain from "./Components/WeightGain.js";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path:"/weightloss",
     element:<AuthorizeUser><WeightLoss /></AuthorizeUser>
+  },
+  {
+    path:"/weightgain",
+    element:<AuthorizeUser><WeightGain /></AuthorizeUser>
   }
 ])
 

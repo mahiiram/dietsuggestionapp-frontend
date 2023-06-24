@@ -4,14 +4,14 @@ import '../Components/styles/Weightloss.css';
 import axios from 'axios';
 import Foodcards from './Weightlosscomponents/Foodcards.js';
 function WeightLoss() {
-  const [image, setImage] = useState();
+  const [images, setImages] = useState();
   const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
     const username = localStorage.getItem('username')
     try {
       const res = await axios.get(`https://dietapp.onrender.com/api/user/${username}`)
-      setImage(res.data.profile);
+      setImages(res.data.profile);
     } catch (error) {
       setLoading(error)
     }
@@ -24,12 +24,12 @@ function WeightLoss() {
       <div className="Main-content" >
         <div className='sidebar'>
           <h1 style={{ display: 'block' }}>Summary</h1>
-          <p>Are you looking for the best Indian Diet Plan to lose weight? The rules are simple.  All you need to do is start eating the right food. This can feel like an insurmountable challenge, given our food culture and dietary habits.</p>
+          <p>Are you looking for the best Indian Diet Plan to loss weight? The rules are simple.  All you need to do is start eating the right food. This can feel like an insurmountable challenge, given our food culture and dietary habits.</p>
         </div>
         <div className='content'>
           <div className='ImageDiv'>
             <h1>Best Indian Diet Plan for Weight Loss</h1>
-            <img src={image || 'https://png.pngtree.com/png-vector/20201203/ourmid/pngtree-businessman-icon-vector-and-glyph-png-image_2499766.jpg'} alt='profilepicture' />
+            <img src={images || 'https://png.pngtree.com/png-vector/20201203/ourmid/pngtree-businessman-icon-vector-and-glyph-png-image_2499766.jpg'} alt='profilepicture' />
           </div>
           <div className='maincontent'>
             <img src='https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg?w=740&t=st=1687510966~exp=1687511566~hmac=839e33213e3563c3f9ef58a4ff624c228a4dee020e6a67fc53dc53ea1dcd3a5e' alt='' />
@@ -414,7 +414,6 @@ function WeightLoss() {
 
           </div>
         </div>
-        <div className='endbar'></div>
       </div>
     </div>
   )
