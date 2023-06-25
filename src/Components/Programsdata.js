@@ -16,10 +16,10 @@ function Programsdata() {
         localStorage.getItem('token')
         navigate('/gymtraining')
     }
-    const yogatraining = () =>{
-        localStorage.getItem('token')
-        navigate('/yogatraining')
-    }
+    // const yogatraining = () =>{
+    //     localStorage.getItem('token')
+    //     navigate('/yogatraining')
+    // }
     return (
         <div className='programsData'>
             <div onClick={weightLoss} className='card'>
@@ -34,10 +34,10 @@ function Programsdata() {
                     <img src='https://e7.pngegg.com/pngimages/576/568/png-clipart-fitness-centre-physical-fitness-logo-work-out-hand-sticker-thumbnail.png' alt=''/>
                     <h4 style={{color:'black',textAlign:'center'}}>Gym training</h4>
             </div>
-            <div onClick={yogatraining} className='card'>
+            {/* <div onClick={yogatraining} className='card'>
                     <img src='https://media.istockphoto.com/id/610540064/vector/man-before-and-after-sports-cartoon-vector-illustration.jpg?s=612x612&w=0&k=20&c=XA67h0btw3hjVISeO-iyITYo8GDVmfDRIfEj0gwuWAc=' alt=''/>
                     <h4 style={{color:'black',textAlign:'center'}}>Yoga training</h4>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -47,8 +47,8 @@ function Hero() {
             </div>
        </div>
        <div className='hero-right'>
-        <div style={{display:'flex',justifyContent:'center'}}>
-        <button onClick={handlePrograms} className='btn-orange'>JoinNow</button>
+        <div >
+        <button style={{width:'100%'}} onClick={handlePrograms} className='btn-orange'>JoinNow</button>
         </div>
 
         <div className='heart'>

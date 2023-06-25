@@ -177,7 +177,7 @@ h1, h4, p, a{
     .best-add{
         background-color: #363d42;
         border-radius: 2rem;
-        width: fit-content;
+        width: 80%;
         padding: 20px 13px;
         text-transform: uppercase;
         color: white;
@@ -194,8 +194,8 @@ h1, h4, p, a{
     .best-add>div{
         position: absolute;
         background-color: green;
-        width: 4.0rem;
-        height: 80%;
+        width: 5.0rem;
+        height: 60%;
         left: 8px;
         border-radius: 2rem;
         z-index: 1;
