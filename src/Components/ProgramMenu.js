@@ -61,8 +61,7 @@ function ProgramMenu() {
                             </div>
                             <div className='button-div'>
                                 <button type="submit" className="btn btn-success">Submit</button>
-                                <button style={{ textDecoration: 'none' }} type="button" className="btn btn-link">Reload</button>
-                            </div>
+                                </div>
                         </form>
                         <div className='center'>
                             <h3 style={{ color: 'white',textAlign:'center' }}>{bmi}</h3>

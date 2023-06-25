@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles/Navbar.styles.css';
 import {FaBars, FaTimes} from 'react-icons/fa';
 
 function Navbar() {
+    const navigate = useNavigate()
    const [click,setClick] = useState(false)
    const handleClick = () =>{
     setClick(!click)
+   }
+   const handleProgram = ()=>{
+    if(localStorage.getItem('token')){
+        navigate('/programs')
+    }else{
+        navigate('/login')
+    }
    }
   return (
     <div className='header'>
@@ -17,8 +25,8 @@ function Navbar() {
             <li>
                 <Link to='/' style={{color:'black'}}>Home</Link>
             </li>
-            <li>
-                <Link to='/programs' style={{color:'black'}}>programs</Link>
+            <li >
+               <Link onClick={handleProgram} style={{color:'black'}}>programs</Link> 
             </li>
         </ul>
         <div className='hamburger' onClick={handleClick}>
