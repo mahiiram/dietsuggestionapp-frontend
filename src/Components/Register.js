@@ -67,7 +67,7 @@ function Register() {
             <input {...formik.getFieldProps('username')} placeholder='Enter Username' type="text" className="form-control"/>
             <label for="exampleInputEmail1" className="form-label" placeholder='Enter Email'>Password</label>
             <input {...formik.getFieldProps('password')} placeholder='Enter Password' type="password" className="form-control"/>
-            <div id="emailHelp" className="form-text">*Password must have minimum 8 haracter includes one special character and Number </div>
+            <div id="emailHelp" className="form-text">*Password must have minimum 8 character includes one special character and Number </div>
            
           </div>
           <div className='button-div'>
