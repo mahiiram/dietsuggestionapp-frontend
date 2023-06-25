@@ -56,7 +56,7 @@ const router = createBrowserRouter([
     element:<AuthorizeUser><WeightGain /></AuthorizeUser>
   },
   {
-    path:"/gymtrainings",
+    path:"/gymtraining",
     element:<AuthorizeUser><Gymtraining/></AuthorizeUser>
   }
 
