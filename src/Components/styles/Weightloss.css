@@ -105,6 +105,11 @@ img{
 .card h1{
     text-align: center;
 }
+.gifdiv{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
 
 
 @media screen and (max-width:900px) {
@@ -204,9 +209,14 @@ img{
         font-family: 'Times New Roman', Times, serif;
     }
     .gifimage{
-        height: 25%;
+        height: 45%;
         width: 40%;
         border-radius: 10px;
         margin-bottom: 10px;
+    }
+    .gifdiv{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 10px 0;
     }
 }

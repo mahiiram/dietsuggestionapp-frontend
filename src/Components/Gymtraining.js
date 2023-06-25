@@ -50,7 +50,10 @@ function Gymtraining() {
                         <p><b>Rest intervals: </b>60–90 seconds</p>
                     </div>
                     <div>
+                        <div className='gifdiv'>
+
                         <img className='gifimage' src='https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/400x400_How_to_do_Zac_Efrons_Baywatch_Workout_Dumbbell_Stiff_Leg_Deadlift-1.gif?h=840' alt='gympicture'/>
+                        </div>
                         <h1>Day 1: Legs, shoulders, and abs</h1>
                         <ul style={{listStyleType:'square'}}>
                             <li><p>Day 1: Legs, shoulders, and abs</p></li>
@@ -83,7 +86,10 @@ function Gymtraining() {
                     </div>
                     <div>
                         <h1>Beginner’s workout routine for men</h1>
+                        <div className='gifdiv'>
                         <img className='gifimage' src='https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/02/400x400_How_to_do_Zac_Efrons_Baywatch_Workout_Dumbbell_Lateral_Raise.gif?h=840' alt='gympic' />
+                        </div>
+
                         <p>Starting out in the gym can seem intimidating, but with proper guidance, the process becomes more approachable — and even invigorating.</p>
                         <p>As a beginner, you can progress very quickly because almost any exercise promotes muscle and strength gains. Still, it’s important to avoid overexertion, which can lead to injuries or decreased performance.</p>
                         <p>This workout routine has you in the gym 3 days per week (such as Monday, Wednesday, and Friday), with full-body sessions completed each day. This allows you to get used to new movements, focus on proper form, and take time to recover.</p>
@@ -128,7 +134,9 @@ function Gymtraining() {
                     </div>
                     <div>
                         <h1>Intermediate workout routine</h1>
+                        <div className='gifdiv'>
                         <img className='gifimage' src='https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/02/400x400_How_to_Exercise_to_Bulk_Up_and_Shape_Your_Body_Overhead_Press.gif?h=840' alt='gympic' />
+                        </div>
                         <p>After working hard in the gym for several months, it’s time to step your training up a notch to keep your gains coming.</p>
                         <p>At this point, you should have good exercise technique and be able to handle more weight on the bar.</p>
                         <p>This 4-day-per-week intermediate program increases reps and sets to stimulate new muscle growth. When they become too easy, you can gradually add more weight or more reps/sets.</p>
@@ -184,7 +192,67 @@ function Gymtraining() {
                         </ul>
                         
                     </div>
-            
+                    <div>
+                        <h1>Advanced workout routine</h1>
+                        <div className='gifdiv'>
+                        <img className='gifimage' src='https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/02/400x400_Hanging_Leg_Raises.gif?h=840' alt='gympic' />
+                        </div>                       
+                        <p>Additional volume (sets and reps) and intensity (weight on the bar) are essential for advanced gym-goers to keep gaining muscle. Keep in mind that you should not attempt this routine unless you’ve been training consistently for 2 or more years.</p>
+                        <p>While the muscle gains won’t come as fast as they did when you were a beginner, there’s still room for significant progress at this stage.</p>
+                        <p>This grueling workout routine has you in the gym 6 days per week with 1 rest day in between. It follows a pull-push-legs pattern, hitting each muscle group twice per week, with supersets incorporated for maximum hypertrophy (muscle growth).</p>
+                        <p>If you do it correctly, you can follow this routine for several years until you reach an advanced level. It may be helpful to switch up your exercises on occasion to keep yourself engaged and prevent burnout.</p>
+                        <p>Again, you can increase weight on the bar, as well as sets and reps, from week to week to ensure continued progress while following this program.</p>
+                        <p><b>Equipment requiredm:</b>fully equipped gym</p>
+                        <p><b>Rest periods: </b>90–180 seconds for main movements, 60–90 seconds for accessories</p>
+                        <p><b>Intensity:</b> Select a weight that allows you to complete the prescribed reps while leaving about 2 solid reps in the tank. To increase intensity, go to failure on the last set.</p>
+                        <p><b>Supersets:</b> Complete the initial set of the first movement immediately followed by the second movement. Repeat until all designated reps and sets are complete.</p>
+                    </div>
+                    <div>
+                    <h1>Pull A</h1>
+                        <ul style={{listStyleType:'square'}}>
+                            <li><p>Back/hamstrings: barbell deadlift — 5 sets of 5 reps</p></li>
+                            <li><p>Back: pullups or lat pulldowns — 3 sets of 10–12 reps</p></li>
+                            <li><p>Back: T-bar rows or seated cable rows — 3 sets of 10–12 reps</p></li>
+                            <li><p>Rear deltoids/traps: face pulls — 4 sets of 12–15 reps</p></li>
+                            <li><p>Biceps: hammer curls — 4 sets of 10-12 reps supersetted with dumbbell shrugs 4 sets of 10–12 reps</p></li>
+                            <li><p>Biceps: standing cable curls — 4 sets of 10–12 reps</p></li>
+                        </ul>
+                        <h1>Push A</h1>
+                        <ul style={{listStyleType:'square'}}>
+                     
+                            <li><p>Chest: flat barbell bench press — 5 set of 5 reps</p></li>
+                            <li><p>Shoulders: seated dumbbell press — 3 sets of 6–8 reps</p></li>
+                            <li><p>Chest: incline dumbbell bench press — 3 sets of 10–12 reps</p></li>
+                            <li><p>Quadriceps: dumbbell or barbell walking lunges — 3 sets of 10–12 reps</p></li>
+                            <li><p>Triceps/shoulders: triceps pushdowns — 4 sets of 10–12 reps supersetted with lateral raises — 4 sets of 10–12 reps</p></li>
+                            <li><p>Chest: cable crossovers — 4 sets of 10–12 reps</p></li>
+                        </ul>
+                        <h1>Legs A</h1>
+                        <ul style={{listStyleType:'square'}}>
+                            <li><p>Legs: barbell back squats — 5 sets of 5 reps</p></li>
+                            <li><p>Hamstrings: Romanian dumbbell deadlifts — 3 sets of 6–8 reps</p></li>
+                            <li><p>Hamstrings: lying leg curls — 4 sets of 10–12 reps</p></li>
+                            <li><p>Hamstrings: lying leg curls — 4 sets of 10–12 reps</p></li>
+                            <li><p>Abs: decline crunches — 4 sets of 12–15 reps</p></li>
+                        </ul>
+                        <h1>Push B</h1>
+                        <ul style={{listStyleType:'square'}}>
+                            <li><p>Shoulders: overhead press — 5 sets of 5 reps</p></li>
+                            <li><p>Chest: dumbbell bench press (incline or flat) — 3 sets of 8–10 reps</p></li>
+                            <li><p>Chest/triceps: dips (weighted if needed) — 4 sets of 10–12 reps</p></li>
+                            <li><p>Shoulders: single-arm cable lateral raises — 4 sets of 10–12 reps</p></li>
+                            <li><p>Chest: machine fly — 4 sets of 10–12 reps</p></li>
+                            <li><p>Triceps: overhead extensions with rope — 4 sets of 10–12 reps</p></li>
+                        </ul>
+                        <h1>Legs B</h1>
+                        <ul style={{listStyleType:'square'}}>
+                            <li><p>Legs: barbell front squats — 5 sets of 5 reps</p></li>
+                            <li><p>Hamstrings: glute ham raises — 3 sets of 8–10 reps</p></li>
+                            <li><p>Legs: walking dumbbell lunges — 3 sets of 10–12 reps per leg</p></li>
+                            <li><p>Quadriceps: seated leg extensions — 4 sets of 10–12 reps supersetted with standing calf raises — 4 sets of 12–15 reps</p></li>
+                            <li><p>Abs: hanging leg raises — 4 sets of 12–15 reps</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
