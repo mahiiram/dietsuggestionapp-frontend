@@ -133,7 +133,7 @@
         grid-template-columns: 1;
         gap: 2rem;
         padding: 0 2rem;
-        margin: 10px;
+        margin: 40px;
     }
     .programsData>.card{
         width: 300px;
@@ -142,5 +142,10 @@
         padding: 10px;
         color: black;
         cursor: pointer;
+    }
+    .card img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
     }
 }

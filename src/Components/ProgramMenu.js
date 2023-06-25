@@ -66,7 +66,7 @@ function ProgramMenu() {
                         </form>
                         <div className='center'>
                             <h3 style={{ color: 'white',textAlign:'center' }}>{bmi}</h3>
-                            <h4 style={{ color: 'green',textAlign:'center' }}>{message}</h4>
+                            <h4 style={{ color: 'White',textAlign:'center' }}>{message}</h4>
                         </div>
                     </div>
 
