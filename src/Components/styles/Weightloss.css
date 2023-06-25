@@ -203,5 +203,10 @@ img{
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
     }
-    
+    .gifimage{
+        height: 25%;
+        width: 40%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
 }

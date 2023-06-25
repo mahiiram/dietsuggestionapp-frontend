@@ -27,7 +27,7 @@ function Gymtraining() {
                 </div>
                 <div className='Weightgaincontent'>
                     <div className='ImageDiv'>
-                        <h1>Weight Gain Diet & Food Plans for Healthy Living</h1>
+                        <h1>Workout Routines for Men and women</h1>
                         <img src={image || 'https://png.pngtree.com/png-vector/20201203/ourmid/pngtree-businessman-icon-vector-and-glyph-png-image_2499766.jpg'} alt='profilepicture' />
                     </div>
                     <div className='maincontent'>
