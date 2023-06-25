@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Navbar from './Navbar.js';
 import '../Components/styles/Weightloss.css';
 import axios from 'axios';
-import FoodCardsgain from './WightgainComponents/FoodCardsgain.js';
 function Gymtraining() {
     const [image, setImage] = useState();
     
