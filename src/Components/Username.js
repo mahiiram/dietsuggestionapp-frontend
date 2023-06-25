@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
-import { Toaster } from 'react-hot-toast';
+import { Toaster, toast } from 'react-hot-toast';
 import { usernameValidate } from '../helper/Validate.js';
 import {useAuthStore} from '../store/store.js';
 import '../Components/styles/Username.css'
+import { authenticate } from '../helper/helper.js';
 
 function Username() {
 
@@ -20,9 +21,18 @@ function Username() {
     validateOnBlur:false,
     validateOnChange:false,
     onSubmit:async values =>{
-      localStorage.setItem("username",values.username);
-      setUsername(values.username);
-      navigate('/password')
+      let userPromise=authenticate(values.username);
+      toast.promise(userPromise,{
+        loading:'checking...',
+        success: <b>successful</b>,
+        error:<b>User Not match</b>
+      })
+
+      userPromise.then(()=>{
+        localStorage.setItem("username",values.username);
+         setUsername(values.username);
+        navigate('/password')
+      })
     }
   })  
   return (

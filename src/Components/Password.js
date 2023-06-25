@@ -45,7 +45,7 @@ function Password() {
       <div className='Maindiv'>  
        <div className='text'>
         <h1  className='text'>Login</h1>
-        <h4  className='text'>hello {apiData?.firstname || apiData?.username}</h4>
+        <h4  className='text'>Hello {apiData?.firstname || apiData?.username}</h4>
        </div>
       <div className='imageDiv'>
         <img  src={apiData?.profile || `https://png.pngtree.com/png-vector/20201203/ourmid/pngtree-businessman-icon-vector-and-glyph-png-image_2499766.jpg`} alt='' />
