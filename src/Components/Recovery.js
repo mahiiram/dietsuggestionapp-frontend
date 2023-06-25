@@ -53,7 +53,7 @@ function Recovery() {
       <Toaster position='top-center' reverseOrder={false} />
       <div className='Maindiv'>  
        <div className='text'>
-        <h1>Recovery</h1>
+        <h1 className='text'>Recovery</h1>
         <p style={{marginTop:"20px"}}>Enter OTP to recover Password </p>
        </div>
       <div className='form-div'>
@@ -70,7 +70,7 @@ function Recovery() {
         
       </div>
       <div className='button'>
-            <p>
+            <p className='text'>
             Can't get OTP?
             </p>
             <button onClick={resendOTP} type="button" className="btn btn-link">Resend</button>

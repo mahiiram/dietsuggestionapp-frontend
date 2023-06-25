@@ -8,12 +8,11 @@ import Register from '../src/Components/Register.js';
 import Profile from '../src/Components/Profile.js';
 import Recovery from '../src/Components/Recovery.js';
 import Reset from '../src/Components/Reset.js';
-
-
 import { AuthorizeUser,ProtectRoute } from "./middleware/auth";
 import HomePrograms from "./Components/HomePrograms.js";
 import WeightLoss from "./Components/WeightLoss.js";
 import WeightGain from "./Components/WeightGain.js";
+import Gymtraining from "./Components/Gymtraining.js";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +54,12 @@ const router = createBrowserRouter([
   {
     path:"/weightgain",
     element:<AuthorizeUser><WeightGain /></AuthorizeUser>
+  },
+  {
+    path:"/gymtrainings",
+    element:<AuthorizeUser><Gymtraining/></AuthorizeUser>
   }
+
 ])
 
 function App() {

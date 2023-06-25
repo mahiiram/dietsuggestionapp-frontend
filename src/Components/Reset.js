@@ -47,8 +47,8 @@ function Reset() {
       <Toaster position='top-center' reverseOrder={false} />
       <div className='Maindiv'>
         <div className='text'>
-          <h1>Reset</h1>
-          <p>Enter New Password</p>
+          <h1 className='text'>Reset</h1>
+          <p className='text'>Enter New Password</p>
         </div>
         <div style={{ marginTop: '20px' }} className='form-div'>
           <form onSubmit={formik.handleSubmit}>
