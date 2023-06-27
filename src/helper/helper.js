@@ -30,22 +30,23 @@ export async function getUser(){
 
 /** register user function */
 export async function registerUser(credentials){
-    const data  = await axios.post(`https://dietapp.onrender.com/api/register`,{
+    const res  = await axios.post(`https://dietapp.onrender.com/api/register`,{
          username:credentials.username,
          email:credentials.email,
          password:credentials.password,
          profile:credentials.profile
-      }).catch((err)=>console.log(err))  
+      })
+      .catch((err)=>console.log(err))  
       let {username,email} = credentials
 
-      if(data.status === 201){
-                await axios.post('https://dietapp.onrender.com/api/registerMail', { username, userEmail : email, text : data.msg })
+      if(res.status === 201){
+                await axios.post('https://dietapp.onrender.com/api/registerMail', { username, userEmail : email, text : res.data.msg })
             }
       
-      if(data.status!==201){
+      if(res.status!==201){
          return console.log("unexpected error occured")
       }
-      return Promise.resolve(data.msg)
+      return Promise.resolve(res.data.msg)
 }
 
 /** login function */
