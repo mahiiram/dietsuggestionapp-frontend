@@ -26,7 +26,7 @@ function Password() {
       let loginPromise=verifyPassword({username,password:values.password});
       toast.promise(loginPromise,{
         loading:'checking...',
-        success: <b>login successfully</b>,
+        success: <b>login successful</b>,
         error:<b>Password Not match</b>
       })
       loginPromise.then(res=>{

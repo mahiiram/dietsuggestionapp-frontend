@@ -4,6 +4,12 @@
     height: 100%;
     padding: 10px;
 }
+.hero-program{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 60vh;
+}
 
 h1, h4, p, a{
     text-decoration: none;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar.js';
 import '../Components/styles/Weightloss.css';
 import axios from 'axios';

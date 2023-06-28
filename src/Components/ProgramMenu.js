@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../Components/styles/Hero.css';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Heart from '../Components/assets/heart.png';
-import Navbar from './Navbar';
+import Navbar from './Navbar.js';
 
 function ProgramMenu() {
     const navigate = useNavigate()
@@ -14,10 +14,10 @@ function ProgramMenu() {
         event.preventDefault();
         if (height <= 3 || weight <= 3) {
             alert('invalid input')
-        }else if(!height && !weight){
+        } else if (!height && !weight) {
             alert('Enter valid input')
         }
-         else {
+        else {
             let bmi = (weight / (height / 100) ** 2);
             setBmi(bmi.toFixed(2));
             if (bmi < 18.5) {
@@ -31,53 +31,51 @@ function ProgramMenu() {
             }
 
         }
-        
+
     }
-    function userLogout(){
+    function userLogout() {
         localStorage.removeItem('token');
         localStorage.removeItem('username');
         navigate('/')
-      }
-      function userprofile(){
+    }
+    function userprofile() {
         localStorage.getItem('token');
         localStorage.getItem('username');
         navigate('/profile')
-      }
+    }
     return (
-        <div className='hero'>
+        <div className='hero-program'>
             <div className='hero-left'>
                 <Navbar />
                 <div className='BMI-calculator'>
                     <div>
-                        <h1>BMI calculator</h1>
+                        <h1 style={{color:'black', fontSize:'25px',textAlign:'center', fontWeight:'500'}}>BMI CALCULATOR</h1>
                         <form onSubmit={calculatebmi}>
-                            <div className="form-floating mb-3">
-                                <input value={weight} onChange={(e) => setWeight(e.target.value)} type="Number" className="form-control" id="floatingInput" placeholder="Enter your weight" />
-                                <label for="floatingInput">Weight*kg</label>
+                            <div class="form-outline">
+                                <input value={weight} onChange={(e) => setWeight(e.target.value)} type="number" id="typeNumber" class="form-control" placeholder='Weight*kg' style={{marginBottom:'20px'}} />
                             </div>
-                            <div className="form-floating mb-3">
-                                <input value={height} onChange={(e) => setHeight(e.target.value)} type="Number" className="form-control" id="floatingInput" placeholder="Enter your Height" />
-                                <label for="floatingInput">Height*cm</label>
+                            <div class="form-outline">
+                                <input value={height} onChange={(e) => setHeight(e.target.value)} type="number" id="typeNumber" class="form-control" placeholder='Height*cm' style={{marginBottom:'20px'}} />
                             </div>
+
                             <div className='button-div'>
                                 <button type="submit" className="btn btn-success">Submit</button>
-                                </div>
+                            </div>
                         </form>
                         <div className='center'>
-                            <h3 style={{ color: 'white',textAlign:'center' }}>{bmi}</h3>
-                            <h4 style={{ color: 'White',textAlign:'center' }}>{message}</h4>
+                            <h3 style={{ color: 'white', textAlign: 'center' }}>{bmi}</h3>
+                            <h4 style={{ color: 'White', textAlign: 'center' }}>{message}</h4>
                         </div>
                     </div>
 
                 </div>
-                <div className='Card-div'></div>
             </div>
             <div className='hero-right'>
-            <div className='buttondiv'>
-            <button onClick={userprofile} className='btn-orange'>Profile</button>
-            <button onClick={userLogout} className='btn-orange'>Logout</button>
-            </div>
-                    
+                <div className='buttondiv'>
+                    <button onClick={userprofile} className='btn-orange'>Profile</button>
+                    <button onClick={userLogout} className='btn-orange'>Logout</button>
+                </div>
+
 
                 <div className='heart'>
                     <img src={Heart} alt='heartpng' />

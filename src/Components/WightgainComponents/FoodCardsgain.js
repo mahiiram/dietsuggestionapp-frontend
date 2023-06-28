@@ -10,7 +10,7 @@ function FoodCardsgain() {
   const [foods, setFoods] = useState([]);
 
   const fetchData = async () => {
-    const res = await axios.get(`https://dietapp.onrender.com/api/getweightlossfoods`)
+    const res = await axios.get(`https://dietapp.onrender.com/api/getweightgainfoods`)
 
     if (res.status !== 201) {
       return console.log("No data")
